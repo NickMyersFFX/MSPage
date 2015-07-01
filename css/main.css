@@ -172,9 +172,20 @@ PAGE: CONTACT
   margin: 0 0 10px;
  
 }
+.button {
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
 
+.button.button-twitter {
+  background-color: rgb(0, 172, 237);
+}
 
-
+.button.button-facebook {
+  background-color: rgb(59, 89, 152);
+}
 
 .contact-info li.phone a {
   background-image: url('../img/phone.png');
@@ -189,6 +200,9 @@ PAGE: CONTACT
 }
 
 
+/********************************
+PAGE: PHOTOS
+*********************************/
 
 /********************************
 COLORS
