@@ -4,9 +4,27 @@ GENERAL
 
 body{
   font-family: 'Helvetica Neue', sans-serif;
-  font-weight:lighter;
-  
+  font-weight:275;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:auto;
+
 }
+
+iframe {
+    border:none;
+    margin-bottom:20px;
+    width:100%;
+    height:150px;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    padding: none;
+      
+  }
+
 
 #wrapper {
   max-width: 940px;
@@ -24,6 +42,8 @@ img {
 
 h3 {
   margin: 0 0 1em 0;
+  color: dimgrey;
+  padding: 10px 0 0 0;
 }
 
 
@@ -38,10 +58,6 @@ header {
   width: 100%;
 }
     
-#logo {
-  text-align: center;
-  margin: 0;
-}
 
 h1 {
   font-family: 'Helvetica Neue', sans-serif;
@@ -65,8 +81,8 @@ NAVIGATION
 
 nav {
   text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+  padding: 15px 0 0;
+  margin: 10px 0 0;
 }
 
 nav ul {
@@ -81,7 +97,7 @@ nav li {
   
 nav a {
   font-weight: 800;
-  padding: 15px 10px;
+  padding: 8px 5px;
 }
 
 
@@ -95,7 +111,7 @@ footer {
   text-align: center;
   clear:both;
   padding-top: 50px;
-  color: #ccc;
+  color: dimgray;
  }
 
 .social-icon {
@@ -108,27 +124,8 @@ footer {
 PAGE: MUSIC
 *********************************/
 
-#gallery {
-  margin:0;
-  padding: 0;
-  list-style: none;
- 
-}
-
-#gallery div {
-  float: center;
-  width: auto;
-  padding: 10px;
-  
-
- 
-}
-
-#gallery li a a{
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7;
+#musiclinks {
+    padding: 15px;
 }
 
 
@@ -137,19 +134,28 @@ PAGE: MUSIC
 PAGE: ABOUT
 *********************************/
 
-.profile-photo {
-  display: block;
-  max-width: 500px;
-  margin: 0 auto 30px;
-  border-radius: ;
-  }
- 
+#secondary h3 {
+    color: dimgrey;
+}
+
+#description {
+    font-weight: bold;
+    color: lightgrey
+}
+
 #bios {
     float: left;
+    font-weight: lighter;
 }
 
 #bios h4 {
-    color: black;
+    color: lightgrey;
+}
+
+#about_body {
+    
+    background: url('../img/BandPhotoHaymarket.jpg') lightgray no-repeat 50% ;
+
 }
 
 /********************************
@@ -160,16 +166,19 @@ PAGE: CONTACT
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1.2em;
+  font-size: .9em;
 }
 
 .contact-info a {
   display:block;
-  min-height: 30px;
   background-repeat:no-repeat;
   background-size: 20px 20px;
   padding: 0 0 0 30px;
   margin: 0 0 10px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 8px;
+  font-weight: lighter;
  
 }
 .button {
@@ -187,16 +196,16 @@ PAGE: CONTACT
   background-color: rgb(59, 89, 152);
 }
 
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
-}
+
 
 .contact-info li.mail a {
   background-image: url('../img/mail.png');
+  background-color: #004;
+  border-radius: 4px;
 }
 
 .contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+  background-image: url('fa.fa-twitter');
 }
 
 
@@ -204,19 +213,59 @@ PAGE: CONTACT
 PAGE: PHOTOS
 *********************************/
 
+
+#gallery {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#gallery li {
+    float: left;
+    width: 90%;
+    margin: 2.5%;
+    background-color: lightgray;
+    opacity: .85;
+}
+
+
+
+#gallery li a a{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.75em;
+  color: #bdc3c7;
+}
+
+/********************************
+PAGE: STORE
+*********************************/
+
+
+#stickers {
+   display: block;
+   border-radius: 10px;
+   max-width: 500px;
+   margin: auto;
+   padding: 15px;
+   }
+
+
+
+
 /********************************
 COLORS
 *********************************/
 
 /* site body */
 body {
-  background-color: #fff;
+  background-color: lightgrey;
   color:dimgrey;
 }
 
 /* blue header */
 header {
-  background: #000044;
+  background: #082748;
   border-color: #000055;
 }
 
@@ -232,7 +281,8 @@ h1, h2 {
 
 /* links */
 a {
-  color: #6ab47b;
+  color: lightgrey;
+  
 }
 
 /* nav link */
